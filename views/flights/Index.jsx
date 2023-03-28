@@ -8,7 +8,6 @@ function Index(props) {
   const date = new Date();
 
   return (
-    // <DefaultLayout title="Index View">
     <DefaultLayout>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <h1>Index View</h1>

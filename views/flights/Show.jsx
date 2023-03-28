@@ -35,11 +35,6 @@ function Show(props) {
           <strong>Flight No: </strong>
           {props.flight.flightNo}
         </p>
-        {/* <p>
-          {' '}
-          <strong>Ship Status: </strong>{' '}
-          {props.flight.shipIsBroken ? 'Broken' : 'Working'}
-        </p> */}
         <p>
           <strong>Departs: </strong>
           {props.flight.departs.toString().slice(0, 25)}
@@ -99,37 +94,27 @@ function Show(props) {
                     overflow: 'hidden',
                   }}
                 >
-                  {/* <option selected>Select a Destination</option> */}
-
-                  {/* <option value="AUS">AUS</option>
-                <option value="DAL">DAL</option>
-                <option value="LAX">LAX</option>
-                <option value="SAN">SAN</option>
-                <option value="SEA">SEA</option> */}
                   {availableAirports.map((airport) => (
                     <option value={airport}>{airport}</option>
                   ))}
                 </select>
               </div>
             </div>
-            <div class='d-flex flex-column'>
-              
-            <label for="arrival">Choose a date/time for your flight:</label>
-            <input
-              type="datetime-local"
-              id="arrival"
-              name="arrival"
-              value={currentDate}
-              // min="2018-06-07T00:00"
-              // max="2018-06-14T00:00"
-            ></input>
-<br />
-<button class="btn btn-outline-dark">Add Destination</button>
+            <div class="d-flex flex-column">
+              <label for="arrival">Choose a date/time for your flight:</label>
+              <input
+                type="datetime-local"
+                id="arrival"
+                name="arrival"
+                value={currentDate}
+              ></input>
+              <br />
+              <button class="btn btn-outline-dark">Add Destination</button>
             </div>
           </form>
           <br /> <br />
         </details>
-
+        <br />
         <div className="d-flex mx-2">
           <a href={`/flights/${props.flight._id}/edit`}>
             <button class="btn btn-outline-primary">Edit</button>
@@ -150,7 +135,6 @@ function Show(props) {
           <a href="/flights">
             <button className="btn btn-outline-success">Back</button>
           </a>
-          {/* render all the destinations then add an input ........ map and populate.... after adding a destination */}
         </div>
       </div>
     </DefaultLayout>

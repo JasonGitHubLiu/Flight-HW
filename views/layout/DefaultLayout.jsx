@@ -14,11 +14,6 @@ function DefaultLayout(props) {
         ></link>
       </head>
       <body>
-        {/* <nav>
-              <ul>
-                  <li><a href="/logs">Home</a></li>
-              </ul>
-          </nav> */}
         <nav class="navbar sticky-top navbar-expand-lg bg-primary ">
           <div class="container-fluid">
             <button

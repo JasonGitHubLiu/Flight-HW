@@ -11,14 +11,14 @@ function New() {
     today.getMinutes(),
     today.getSeconds()
   );
-  let currentDate = new Date(
-    today.getFullYear(),
-    today.getMonth(),
-    today.getDate(),
-    today.getHours(),
-    today.getMinutes(),
-    today.getSeconds()
-  );
+  // let currentDate = new Date(
+  //   today.getFullYear(),
+  //   today.getMonth(),
+  //   today.getDate(),
+  //   today.getHours(),
+  //   today.getMinutes(),
+  //   today.getSeconds()
+  // );
 
   return (
     <DefaultLayout>
@@ -39,7 +39,6 @@ function New() {
             <option value="United">United</option>
           </select>
           <br />
-
 
           <label htmlFor="flt">Flight No:</label>
           <br />
