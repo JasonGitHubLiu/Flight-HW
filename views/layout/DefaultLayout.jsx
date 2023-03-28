@@ -30,12 +30,20 @@ function DefaultLayout(props) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/flights">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/flights"
+                  >
                     <h3 className="text-white">All Flights</h3>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/flights/new">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/flights/new"
+                  >
                     <h3 className="text-white">Add Flight</h3>
                   </a>
                 </li>

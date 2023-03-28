@@ -2,7 +2,7 @@ import React from 'react';
 import DefaultLayout from '../layout/DefaultLayout';
 
 function Edit(props) {
-  console.log(props)
+  console.log(props);
   return (
     <DefaultLayout>
       <div className="d-flex flex-column justify-content-center align-items-center">
@@ -17,26 +17,24 @@ function Edit(props) {
           <input type="text" id="ety" name="entry" value={props.log.flightNo} />
           <br />
           <br />
-          <div className="d-flex">
-          </div>
+          <div className="d-flex"></div>
           <br />
           <div className="d-flex flex-column justify-content-center align-items-center">
+            <label htmlFor="airport">Destination:</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              name="airport"
+            >
+              <option selected>Select Destination</option>
+              <option value="AUS">AUS</option>
+              <option value="DAL">DAL</option>
+              <option value="LAX">LAX</option>
+              <option value="SAN">SAN</option>
+              <option value="SEA">SEA</option>
+            </select>
 
-          <label htmlFor="airport">Destination:</label>
-          <select
-            class="form-select"
-            aria-label="Default select example"
-            name="airport"
-          >
-            <option selected>Select Destination</option>
-            <option value="AUS">AUS</option>
-            <option value="DAL">DAL</option>
-            <option value="LAX">LAX</option>
-            <option value="SAN">SAN</option>
-            <option value="SEA">SEA</option>
-          </select>
-
-          <br />
+            <br />
 
             <div className="d-flex">
               <button className="btn btn-outline-success">Submit</button>

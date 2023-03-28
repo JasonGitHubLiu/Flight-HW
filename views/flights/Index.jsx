@@ -30,15 +30,31 @@ function Index(props) {
             <div className="my-3">
               {' '}
               <div class="card" style={{ width: '25rem' }}>
-                <div class="card-body text-center">  <strong><h3>Airline:</h3></strong>
+                <div class="card-body text-center">
+                  {' '}
+                  <strong>
+                    <h3>Airline:</h3>
+                  </strong>
                   <a href={`/flights/${flights._id}`}>
                     <h5 class="card-title"> {flights.airport}</h5>
                   </a>
                   <p>
-                    <br /> 
-                     <strong><h4>Departure:</h4></strong>
-                    {flights.departs < date && <h5 class="card-title" style={{color: 'red'}}><strong>Date:</strong> {`${flights.departs.toISOString().slice(0, 10)}`}</h5>}                    
-                    {flights.departs > date && <h5 class="card-title"><strong>Date:</strong> {`${flights.departs.toISOString().slice(0, 10)}`}</h5>}                    
+                    <br />
+                    <strong>
+                      <h4>Departure:</h4>
+                    </strong>
+                    {flights.departs < date && (
+                      <h5 class="card-title" style={{ color: 'red' }}>
+                        <strong>Date:</strong>{' '}
+                        {`${flights.departs.toISOString().slice(0, 10)}`}
+                      </h5>
+                    )}
+                    {flights.departs > date && (
+                      <h5 class="card-title">
+                        <strong>Date:</strong>{' '}
+                        {`${flights.departs.toISOString().slice(0, 10)}`}
+                      </h5>
+                    )}
                   </p>
                 </div>
               </div>
